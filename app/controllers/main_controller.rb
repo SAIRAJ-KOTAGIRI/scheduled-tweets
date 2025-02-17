@@ -1,6 +1,6 @@
 class MainController < ApplicationController
     def index
-        flash[:notice]= "Logged in sucessfully"
-        flash[:alert] = "Password Incorrect"
+        flash.now[:notice]= "Logged in sucessfully"
+        flash.now[:alert] = "Password Incorrect"
     end
 end
